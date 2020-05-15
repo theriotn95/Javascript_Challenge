@@ -38,3 +38,10 @@ button.on("click", function(){
             })
         })
     });
+   //Add reset search button to clear previous search 
+    var clear_button = d3.select('#remove')
+    clear_button.on('click', function() {
+        var tBody = d3.select('tbody');
+    
+        tBody.html("");
+    })
